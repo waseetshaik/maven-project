@@ -12,7 +12,7 @@ RewriteRule .* https://%{HTTP:Host}%{REQUEST_URI} [L,R=permanent]
 
 Save file and restart the service
 
-
+Added a extra line
 
 
 Http to https redirection for Nginx 
