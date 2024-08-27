@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Flash Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .card {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card-front {
+            background-color: #232f3e;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .card-back {
+            background-color: #ff9900;
+            color: #232f3e;
+            transform: rotateY(180deg);
+            padding: 10px;
+            font-size: 14px;
+        }
+        .section-title {
+            width: 100%;
+            text-align: center;
+            font-size: 28px;
+            margin-top: 20px;
+            color: #232f3e;
+        }
+    </style>
+</head>
+<body>
+    <div class="section-title">Compute Services</div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">EC2</div>
+            <div class="card-back">Elastic Compute Cloud: Scalable virtual servers in the cloud</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Lightsail</div>
+            <div class="card-back">Easy-to-use cloud platform to build applications and websites</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Lambda</div>
+            <div class="card-back">Serverless compute service for running code without provisioning servers</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Batch</div>
+            <div class="card-back">Run batch computing workloads on the AWS Cloud</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Elastic Beanstalk</div>
+            <div class="card-back">Deploy and manage applications in the cloud</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Serverless Application Repository</div>
+            <div class="card-back">Discover, deploy, and publish serverless applications</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">AWS Outposts</div>
+            <div class="card-back">Run AWS infrastructure and services on premises</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">EC2 Image Builder</div>
+            <div class="card-back">Automate the creation, management, and deployment of customized, secure, and up-to-date server images</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">AWS App Runner</div>
+            <div class="card-back">Quickly deploy and run containerized web applications and APIs</div>
+        </div>
+    </div>
+
+    <div class="section-title">Containers Services</div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Elastic Container Service</div>
+            <div class="card-back">Run and manage Docker containers</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Elastic Kubernetes Service</div>
+            <div class="card-back">Managed Kubernetes service</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Red Hat OpenShift Service on AWS</div>
+            <div class="card-back">Managed Red Hat OpenShift service on AWS</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Elastic Container Registry</div>
+            <div class="card-back">Fully managed Docker container registry</div>
+        </div>
+    </div>
+
+    <div class="section-title">Storage Services</div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">S3</div>
+            <div class="card-back">Simple Storage Service: Scalable object storage for data backup, archiving, and analytics</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">EFS</div>
+            <div class="card-back">Elastic File System: Scalable file storage for use with AWS Cloud services and on-premises resources</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">FSx</div>
+            <div class="card-back">Fully managed third-party file systems with features and performance optimized for workloads</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">S3 Glacier</div>
+            <div class="card-back">Low-cost cloud storage service for data archiving and long-term backup</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Storage Gateway</div>
+            <div class="card-back">Hybrid cloud storage service to provide on-premises access to virtually unlimited cloud storage</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">AWS Backup</div>
+            <div class="card-back">Centralized backup service to automate and manage backups across AWS services</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">AWS Elastic Disaster Recovery</div>
+            <div class="card-back">Disaster recovery service that minimizes downtime and data loss with fast, reliable recovery of physical, virtual, and cloud-based servers</div>
+        </div>
+    </div>
+
+    <div class="section-title">Database Services</div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">RDS</div>
+            <div class="card-back">Relational Database Service: Managed relational databases for MySQL, PostgreSQL, Oracle, SQL Server, and MariaDB</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">ElastiCache</div>
+            <div class="card-back">In-memory caching service for Redis and Memcached</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Neptune</div>
+            <div class="card-back">Managed graph database service</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Amazon QLDB</div>
+            <div class="card-back">Quantum Ledger Database: Managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Amazon DocumentDB</div>
+            <div class="card-back">Managed MongoDB-compatible database service</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Amazon Keyspaces</div>
+            <div class="card-back">Managed Apache Cassandra-compatible database service</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Amazon Timestream</div>
+            <div class="card-back">Time series database service</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">DynamoDB</div>
+            <div class="card-back">Managed NoSQL database service for any scale</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Amazon MemoryDB</div>
+            <div class="card-back">Managed Redis-compatible in-memory database service</div>
+        </div>
+    </div>
+	<div class="section-title">Migration & Transfer</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Migration Hub</div>
+	        <div class="card-back">Centralized repository to track the progress of application migrations across multiple AWS and partner solutions</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Application Migration Service</div>
+	        <div class="card-back">Automated lift-and-shift service to migrate applications to AWS</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Application Discovery Service</div>
+	        <div class="card-back">Discover on-premises applications and their dependencies to plan migrations</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Database Migration Service</div>
+	        <div class="card-back">Migrate databases to AWS with minimal downtime</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Transfer Family</div>
+	        <div class="card-back">Transfer files directly into and out of Amazon S3 or Amazon EFS using FTP, FTPS, SFTP, and AS2</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Snow Family</div>
+	        <div class="card-back">Physical devices to migrate large amounts of data into and out of AWS</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">DataSync</div>
+	        <div class="card-back">Automated data transfer service to move data between on-premises storage and AWS</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Mainframe Modernization</div>
+	        <div class="card-back">Modernize and migrate mainframe applications to AWS</div>
+	    </div>
+	</div>
+
+	<div class="section-title">Networking & Content Delivery</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">VPC</div>
+	        <div class="card-back">Virtual Private Cloud: Isolated cloud resources</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">CloudFront</div>
+	        <div class="card-back">Content delivery network (CDN) service</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Route 53</div>
+	        <div class="card-back">Scalable domain name system (DNS) web service</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">API Gateway</div>
+	        <div class="card-back">Build, deploy, and manage APIs</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Direct Connect</div>
+	        <div class="card-back">Dedicated network connection to AWS</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS App Mesh</div>
+	        <div class="card-back">Service mesh to monitor and control microservices</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Global Accelerator</div>
+	        <div class="card-back">Accelerate traffic to globally distributed applications</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Cloud Map</div>
+	        <div class="card-back">Service discovery for cloud resources</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Route 53 Application Recovery Controller</div>
+	        <div class="card-back">Recovery readiness and routing control for applications</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Private 5G</div>
+	        <div class="card-back">Easily deploy and manage private mobile networks</div>
+	    </div>
+	</div>
+	<div class="section-title">Developer Tools</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">CodeStar</div>
+	        <div class="card-back">Develop, build, and deploy applications on AWS</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">CodeCommit</div>
+	        <div class="card-back">Fully managed source control service that makes it easy for teams to host secure and scalable Git repositories</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">CodeBuild</div>
+	        <div class="card-back">Fully managed build service that compiles source code, runs tests, and produces software packages that are ready to deploy</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">CodeDeploy</div>
+	        <div class="card-back">Automates code deployments to any instance, including EC2 instances and instances running on-premises</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">CodePipeline</div>
+	        <div class="card-back">Fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Cloud9</div>
+	        <div class="card-back">Cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">CloudShell</div>
+	        <div class="card-back">Browser-based shell to manage, interact with, and explore AWS resources</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">X-Ray</div>
+	        <div class="card-back">Helps developers analyze and debug production, distributed applications, such as those built using a microservices architecture</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">CodeArtifact</div>
+	        <div class="card-back">Fully managed artifact repository service that makes it easy for organizations to securely store, publish, and share software packages used in their software development process</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon CodeCatalyst</div>
+	        <div class="card-back">Collaborative software development service built on top of GitHub</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS AppConfig</div>
+	        <div class="card-back">Quickly deploy application configuration changes across applications</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Q Developer (Including Amazon CodeWhisperer)</div>
+	        <div class="card-back">Provides developer-focused insights and tools to accelerate development processes</div>
+	    </div>
+	</div>
+
+	<div class="section-title">Management & Governance</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Organizations</div>
+	        <div class="card-back">Centrally manage and govern your environment as you grow and scale your AWS resources</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">CloudWatch</div>
+	        <div class="card-back">Monitoring and observability service</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">CloudTrail</div>
+	        <div class="card-back">Tracks user activity and API usage</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">CloudFormation</div>
+	        <div class="card-back">Infrastructure as code (IaC) service for automating the deployment of AWS resources</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Config</div>
+	        <div class="card-back">Assesses, audits, and evaluates the configurations of your AWS resources</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">OpsWorks</div>
+	        <div class="card-back">Configuration management service that provides managed instances of Chef and Puppet</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Systems Manager</div>
+	        <div class="card-back">Provides a unified user interface to view operational data from multiple AWS services and allows you to automate operational tasks</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Trusted Advisor</div>
+	        <div class="card-back">Provides real-time guidance to help you provision your resources following AWS best practices</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Control Tower</div>
+	        <div class="card-back">Easily set up and govern a secure, multi-account AWS environment</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Well-Architected Tool</div>
+	        <div class="card-back">Review the state of your workloads and compares them to the latest AWS architectural best practices</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Resource Groups & Tag Editor</div>
+	        <div class="card-back">Organize and manage your AWS resources by grouping them using tags</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Health Dashboard</div>
+	        <div class="card-back">Provides personalized view of the health of AWS services, and notifications on planned activities and unplanned events</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Service Catalog</div>
+	        <div class="card-back">Create and manage catalogs of IT services that are approved for use on AWS</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Chatbot</div>
+	        <div class="card-back">Interacts with AWS services from Slack and Amazon Chime</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Compute Optimizer</div>
+	        <div class="card-back">Recommends optimal AWS resources for your workloads to reduce costs and improve performance</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Grafana</div>
+	        <div class="card-back">Managed Grafana service for monitoring and observability</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Prometheus</div>
+	        <div class="card-back">Managed Prometheus service for monitoring and alerting</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Service Quotas</div>
+	        <div class="card-back">View and manage your quotas for AWS services</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Proton</div>
+	        <div class="card-back">Fully managed delivery service for container and serverless applications</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Resource Explorer</div>
+	        <div class="card-back">Quickly find resources in your AWS account</div>
+	    </div>
+	</div>
+	<div class="section-title">Media Services</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Kinesis Video Streams</div>
+	        <div class="card-back">Capture, process, and store video streams for analytics and machine learning</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">MediaConvert</div>
+	        <div class="card-back">File-based video transcoding service with broadcast-grade features</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Elastic Transcoder</div>
+	        <div class="card-back">Easy-to-use media transcoding service in the cloud</div>
+	    </div>
+	</div>
+
+	<div class="section-title">Machine Learning</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon SageMaker</div>
+	        <div class="card-back">Build, train, and deploy machine learning models at scale</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Polly</div>
+	        <div class="card-back">Turn text into lifelike speech using deep learning</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Rekognition</div>
+	        <div class="card-back">Image and video analysis service</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Textract</div>
+	        <div class="card-back">Automatically extract text, handwriting, and data from scanned documents</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Transcribe</div>
+	        <div class="card-back">Automatic speech recognition (ASR) service</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Translate</div>
+	        <div class="card-back">Neural machine translation service</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Bedrock</div>
+	        <div class="card-back">Managed service for foundation models, including text and image generation</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Fraud Detector</div>
+	        <div class="card-back">Detect online fraud using machine learning</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Lex</div>
+	        <div class="card-back">Build conversational interfaces using voice and text</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Q</div>
+	        <div class="card-back">Machine learning-powered question and answer service</div>
+	    </div>
+	</div>
+
+	<div class="section-title">Analytics</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Athena</div>
+	        <div class="card-back">Interactive query service to analyze data in Amazon S3 using SQL</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Redshift</div>
+	        <div class="card-back">Fast, fully managed data warehouse that makes it simple and cost-effective to analyze data using SQL and existing BI tools</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">CloudSearch</div>
+	        <div class="card-back">Managed search service that is easy to set up, manage, and scale</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon OpenSearch Service</div>
+	        <div class="card-back">Search, analyze, and visualize data in real-time</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Kinesis</div>
+	        <div class="card-back">Collect, process, and analyze real-time, streaming data</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">QuickSight</div>
+	        <div class="card-back">Fast, cloud-powered business intelligence (BI) service</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Data Pipeline</div>
+	        <div class="card-back">Orchestration service for periodic, data-driven workflows</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Lake Formation</div>
+	        <div class="card-back">Build, secure, and manage data lakes</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">MSK</div>
+	        <div class="card-back">Fully managed service for Apache Kafka</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Glue</div>
+	        <div class="card-back">Fully managed ETL (extract, transform, and load) service</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">EMR</div>
+	        <div class="card-back">Managed cluster platform that simplifies running big data frameworks</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Data Firehose</div>
+	        <div class="card-back">Reliably load streaming data into data lakes, data stores, and analytics services</div>
+	    </div>
+	</div>
+	<div class="section-title">Security, Identity, & Compliance</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">IAM</div>
+	        <div class="card-back">Identity and Access Management: Manage access to AWS services and resources</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">IAM Identity Center</div>
+	        <div class="card-back">Centralized identity management for AWS accounts and applications</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Secrets Manager</div>
+	        <div class="card-back">Secure and manage sensitive information such as database credentials, API keys, and secrets</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Macie</div>
+	        <div class="card-back">Discover and protect sensitive data using machine learning</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">WAF & Shield</div>
+	        <div class="card-back">Web application firewall and DDoS protection</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Cognito</div>
+	        <div class="card-back">User sign-up, sign-in, and access control</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">GuardDuty</div>
+	        <div class="card-back">Threat detection service that continuously monitors for malicious activity</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Inspector</div>
+	        <div class="card-back">Automated security assessment service to improve the security and compliance of applications</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Certificate Manager</div>
+	        <div class="card-back">Provision, manage, and deploy SSL/TLS certificates for use with AWS services and internal connected resources</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Key Management Service</div>
+	        <div class="card-back">Create and manage cryptographic keys and control their use across a wide range of AWS services</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">CloudHSM</div>
+	        <div class="card-back">Dedicated hardware security module (HSM) instances within the AWS Cloud</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Resource Access Manager</div>
+	        <div class="card-back">Securely share your resources with any AWS account or within your AWS Organization</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Directory Service</div>
+	        <div class="card-back">Managed Microsoft Active Directory in the AWS Cloud</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Firewall Manager</div>
+	        <div class="card-back">Central security management of firewall rules</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Artifact</div>
+	        <div class="card-back">On-demand access to AWS compliance reports and select online agreements</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Detective</div>
+	        <div class="card-back">Investigate potential security issues or suspicious activities</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Security Hub</div>
+	        <div class="card-back">Unified security and compliance center that aggregates alerts and enables automated compliance checks</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Audit Manager</div>
+	        <div class="card-back">Continuously audit your AWS usage to simplify how you assess risk and compliance</div>
+	    </div>
+	</div>
+
+	<div class="section-title">Cloud Financial Management</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Billing and Cost Management</div>
+	        <div class="card-back">Manage your AWS billing and cost management preferences and access cost and usage reports</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Budgets</div>
+	        <div class="card-back">Set custom cost and usage budgets and receive alerts when you exceed your thresholds</div>
+	    </div>
+	</div>
+
+	<div class="section-title">Front-end Web & Mobile</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS Amplify</div>
+	        <div class="card-back">Build scalable mobile and web apps fast with AWS Amplify</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS AppSync</div>
+	        <div class="card-back">GraphQL service with real-time data synchronization and offline programming capabilities</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Device Farm</div>
+	        <div class="card-back">Test your app against a large collection of physical devices</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Location Service</div>
+	        <div class="card-back">Add location data to your applications</div>
+	    </div>
+	</div>
+
+	<div class="section-title">Application Integration</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Step Functions</div>
+	        <div class="card-back">Coordinate distributed applications and microservices using visual workflows</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon EventBridge</div>
+	        <div class="card-back">Serverless event bus that connects application data from your own apps, integrated Software-as-a-Service (SaaS) applications, and AWS services</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Simple Notification Service</div>
+	        <div class="card-back">Fully managed pub/sub messaging and mobile notifications service</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Simple Queue Service</div>
+	        <div class="card-back">Fully managed message queuing service for microservices, distributed systems, and serverless applications</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon AppFlow</div>
+	        <div class="card-back">Automate data flows between AWS services and SaaS applications securely</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Managed Apache Airflow</div>
+	        <div class="card-back">Orchestration service for scheduling and monitoring workflows</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS B2B Data Interchange</div>
+	        <div class="card-back">Automate and manage your B2B data exchanges securely</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">SWF</div>
+	        <div class="card-back">Amazon Simple Workflow Service: Build scalable, resilient applications with complex business logic</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon MQ</div>
+	        <div class="card-back">Managed message broker service for Apache ActiveMQ and RabbitMQ</div>
+	    </div>
+	</div>
+
+	<div class="section-title">Business Applications</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Simple Email Service</div>
+	        <div class="card-back">Cloud-based email sending service designed to help digital marketers and application developers send marketing, notification, and transactional emails</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Pinpoint</div>
+	        <div class="card-back">Engage your customers by sending marketing, transactional, and bulk emails, as well as targeted push notifications, SMS text messages, and voice messages</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon WorkDocs</div>
+	        <div class="card-back">Securely create, store, and share files with collaborative editing and feedback capabilities</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon WorkMail</div>
+	        <div class="card-back">Secure, managed business email and calendar service with support for existing desktop and mobile email clients</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Connect</div>
+	        <div class="card-back">Easy to use omnichannel cloud contact center</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon Chime</div>
+	        <div class="card-back">Secure, easy-to-use application that lets you meet, chat, and place business calls inside and outside your organization</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AWS AppFabric</div>
+	        <div class="card-back">Connects SaaS applications with AWS services to streamline IT operations</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">Amazon One Enterprise</div>
+	        <div class="card-back">Integrated services for business applications</div>
+	    </div>
+	</div>
+
+	<div class="section-title">End User Computing</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">WorkSpaces</div>
+	        <div class="card-back">Virtual desktops in the cloud that you can provision for your users</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">AppStream 2.0</div>
+	        <div class="card-back">Fully managed application streaming service that provides users instant access to their desktop applications from anywhere</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">WorkSpaces Secure Browser</div>
+	        <div class="card-back">Secure browser streaming from the cloud</div>
+	    </div>
+	</div>
+	<div class="card">
+	    <div class="card-inner">
+	        <div class="card-front">WorkSpaces Thin Client</div>
+	        <div class="card-back">Lightweight client application that lets users access their Amazon WorkSpaces from personal devices</div>
+	    </div>
+	</div>
+
+    <footer>
+        <p>Created by Avinash Reddy Thipparthi | Learn more about AWS on <a href="https://youtube.com/@avizway" target="_blank">YouTube</a></p>
+		<p>Connect with me on <a href="https://linkedin.com/in/avizway" target="_blank">Linkedin</a></p>
+    </footer>
+	
+</body>
+</html>
