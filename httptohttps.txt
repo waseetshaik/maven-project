@@ -13,8 +13,7 @@ added dummy line
 Save file and restart the service
 
 Added webhook option
-did second change
-
+error checked
 
 Http to https redirection for Nginx 
 _____________________________________
